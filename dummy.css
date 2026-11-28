@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --red:#ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
+    --cyan: #00ffff;
+    --mangenta: #ff00ff;
+    --yellow : #ffff00;
+    --orange: #ff6b00;
+}
+body{
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 28px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: var(--white);
+}
+.header::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--green);
+    margin: 10px auto 0;
+    border-radius: 999px;
+}
+main{
+    width:100%;
+    max-width: 400px;
+    margin: 24px auto;
+    background-color: var(--black);
+    border: 1px solid var(--green);
+    border-radius: 16px;
+    padding: 28px;
+}
+main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+label{
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 4px;
+}
+input[type="number"],select {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--green);
+    border-radius: 10px;
+    outline: none;
+}
+#swap-btn{
+    align-self: center;
+    margin: 4x 0;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black);
+    cursor: pointer;
+
+}
+#swap-btn:hover{
+    color: var(--orange);
+}
+#convert-btn{
+        margin-top: 8px;
+    width: 100%;
+    padding: 13px 18px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    color: var(--black);
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+#result-output {
+    margin-top: 10px;
+    padding: 14px 16px 4px;
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    min-height: 44px;
+}
+
+#rate-output {
+    padding: 0 16px 14px;
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    font-size: 0.875rem;
+    color: var(--white);
+    min-height: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.footer h3 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--white);
+}

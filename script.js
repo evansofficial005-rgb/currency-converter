@@ -1,12 +1,15 @@
 console.log("the script has connected successfully");
 
+
+
+//get all the html element and store them on the following variables.
 const amountInput = document.getElementById('amount');
 const fromCurrency = document.getElementById('from-currency');
 const toCurrency = document.getElementById('to-currency');
 const swapBtn = document.getElementById('swap-btn');
 const convertBtn = document.getElementById('convert-btn');
 const resultOutput = document.getElementById('result-output');
-const rateOutput = document.getElementById('rate-output')
+const rateOutput = document.getElementById('rate-output');
 
 console.log({amountInput, fromCurrency, toCurrency, swapBtn, convertBtn, resultOutput, rateOutput});
 
